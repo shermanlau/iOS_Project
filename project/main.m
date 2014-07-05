@@ -1,6 +1,6 @@
 //
 //  main.m
-//  project
+//  PhotosBrowse
 //
 //  Created by abc on 7/3/2014.
 //  Copyright (c) 2014 ___FULLUSERNAME___. All rights reserved.
@@ -10,7 +10,7 @@
 
 #import "AppDelegate.h"
 
-int main(int argc, char * argv[])
+int main(int argc, char *argv[])
 {
     @autoreleasepool {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));

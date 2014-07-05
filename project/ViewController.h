@@ -8,6 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+#import "PicFrame.h"
+
+@interface ViewController : UIViewController<UIScrollViewDelegate>{
+    NSArray *data;
+    NSMutableArray *imageviews;
+    NSInteger index;
+    BOOL pageControlUsed;
+    PicFrame *pf;
+}
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollImages;
+@property (weak, nonatomic) IBOutlet UILabel *intro;
+@property (weak, nonatomic) IBOutlet UIPageControl *pagecontrol;
+@property (weak, nonatomic) IBOutlet UIView *imagesBack;
+- (IBAction)chagepage:(id)sender;
 
 @end
